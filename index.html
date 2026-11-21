@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mayhem Coin — a community-driven Solana token project.">
+  <meta name="theme-color" content="#080808">
+  <title>Mayhem Coin — MAYHEM</title>
+  <style>
+    :root{--bg:#080808;--panel:#11100d;--gold:#d7ad4b;--gold2:#f4d98a;--muted:#aaa49a;--line:#302719}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 80% 5%,#38280e 0,transparent 34%),var(--bg);color:#f7f2e8;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #2b2417}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.12em}.mark{width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-weight:900;box-shadow:0 0 24px #d7ad4b25}
+    nav{display:flex;gap:26px;color:#d0c7b6;font-size:14px}nav a:hover{color:var(--gold2)}
+    .hero{padding:100px 0 88px;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;min-height:590px}
+    .eyebrow{color:var(--gold);font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:800}
+    h1{font-size:clamp(54px,8vw,94px);line-height:.96;letter-spacing:-.065em;margin:18px 0 24px}
+    h1 span{color:var(--gold);text-shadow:0 0 38px #d7ad4b30}
+    .lead{max-width:590px;color:#c4bdae;font-size:18px}
+    .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+    .btn{padding:13px 20px;border-radius:5px;border:1px solid var(--gold);font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+    .primary{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#171108}
+    .secondary{color:var(--gold2);background:#17130c}
+    .coin-area{display:grid;place-items:center;min-height:350px}
+    .coin{width:min(310px,75vw);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;position:relative;background:radial-gradient(circle at 35% 28%,#fff0b7 0,#d5a83d 17%,#8d641d 47%,#1b1408 72%);box-shadow:0 0 0 9px #b58a3320,0 0 0 12px #d7ad4b80,0 25px 90px #d7ad4b30,inset 0 0 0 9px #f5d98b55}
+    .coin:before{content:"";position:absolute;inset:20px;border:2px solid #f4d98a99;border-radius:50%}
+    .coin:after{content:"";position:absolute;inset:34px;border:1px dashed #3b290b;border-radius:50%}
+    .coin-inner{position:relative;z-index:1;text-align:center;color:#201606;text-shadow:0 1px #f7df9d}
+    .coin-inner b{display:block;font-size:42px;letter-spacing:.04em;line-height:1}.coin-inner small{display:block;font-size:11px;letter-spacing:.3em;margin-top:12px;font-weight:900}
+    section{padding:72px 0;border-top:1px solid #292216}
+    .section-title{font-size:clamp(30px,4vw,44px);margin:8px 0 14px;letter-spacing:-.04em}
+    .muted{color:var(--muted);max-width:720px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+    .card{background:linear-gradient(145deg,#15130f,#0e0d0b);border:1px solid var(--line);padding:24px;border-radius:8px}
+    .card .num{color:var(--gold);font-size:12px;letter-spacing:.15em;font-weight:900}.card h3{margin:8px 0;font-size:20px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .tokenomics{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+    .metric{padding:20px;border:1px solid var(--line);background:#100e0a;border-radius:7px}
+    .metric span{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.14em}
+    .metric strong{display:block;color:var(--gold2);font-size:25px;margin-top:5px}
+    .notice{border:1px solid #6e5424;background:#211a0d;padding:16px 18px;border-radius:6px;color:#e7d5a9;font-size:13px;margin-top:24px}
+    footer{padding:28px 0;color:#8e877a;font-size:12px;border-top:1px solid #292216}
+    @media(max-width:760px){nav{gap:12px;font-size:12px}.hero{grid-template-columns:1fr;padding:70px 0 60px;gap:10px}.coin-area{min-height:280px}.grid{grid-template-columns:1fr}.tokenomics{grid-template-columns:1fr}header{height:auto;padding:18px 0;align-items:flex-start;gap:14px;flex-direction:column}}
+  </style>
+</head>
+<body>
+<header class="wrap">
+  <a class="brand" href="#"><span class="mark">M</span><span>MAYHEM COIN</span></a>
+  <nav><a href="#about">About</a><a href="#token">Token</a><a href="#roadmap">Roadmap</a></nav>
+</header>
+<main>
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow">A Solana community token project</div>
+      <h1>MAKE SOME<br><span>MAYHEM.</span></h1>
+      <p class="lead">A bold community-first token concept built for the Solana ecosystem. Follow the project as it takes shape.</p>
+      <div class="actions">
+        <a class="btn primary" href="#token">Explore the token</a>
+        <a class="btn secondary" href="#about">Learn more</a>
+      </div>
+    </div>
+    <div class="coin-area" aria-label="Gold Mayhem Coin illustration">
+      <div class="coin"><div class="coin-inner"><b>M</b><small>MAYHEM</small></div></div>
+    </div>
+  </div>
+  <section id="about"><div class="wrap">
+    <div class="eyebrow">01 / About</div><h2 class="section-title">The project starts here.</h2>
+    <p class="muted">Mayhem Coin is an early-stage project concept. This website is its first home: a place to share verified project updates, token details and community links as they become available.</p>
+    <div class="grid">
+      <article class="card"><div class="num">01</div><h3>Community</h3><p>Build an engaged community through clear updates and open communication.</p></article>
+      <article class="card"><div class="num">02</div><h3>Transparency</h3><p>Publish verified token information and important project changes.</p></article>
+      <article class="card"><div class="num">03</div><h3>On Solana</h3><p>Designed as a Solana token project. Network status will be updated after deployment.</p></article>
+    </div>
+  </div></section>
+  <section id="token"><div class="wrap">
+    <div class="eyebrow">02 / Token details</div><h2 class="section-title">MAYHEM at a glance.</h2>
+    <p class="muted">Planned token settings are shown below. The token has not yet been created, so there is no live mint address or market price.</p>
+    <div class="tokenomics">
+      <div class="metric"><span>Token name</span><strong>Mayhem Coin</strong></div>
+      <div class="metric"><span>Symbol</span><strong>MAYHEM</strong></div>
+      <div class="metric"><span>Planned total supply</span><strong>1,000,000,000</strong></div>
+      <div class="metric"><span>Development network</span><strong>Solana Devnet</strong></div>
+    </div>
+    <div class="notice"><b>Test phase:</b> MAYHEM is not live yet. Devnet tokens are for testing only and have no real-world monetary value. No sale, price, exchange listing or return is being promised.</div>
+  </div></section>
+  <section id="roadmap"><div class="wrap">
+    <div class="eyebrow">03 / Roadmap</div><h2 class="section-title">One step at a time.</h2>
+    <div class="grid">
+      <article class="card"><div class="num">PHASE 01</div><h3>Foundation</h3><p>Project identity, website and token plan.</p></article>
+      <article class="card"><div class="num">PHASE 02</div><h3>Devnet testing</h3><p>Create and test the token on Solana Devnet.</p></article>
+      <article class="card"><div class="num">PHASE 03</div><h3>Community launch prep</h3><p>Publish verified details before considering any mainnet launch.</p></article>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Mayhem Coin. Independent early-stage project. <span style="float:right">Black × Gold</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
